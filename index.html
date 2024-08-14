@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stats Preview Card Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "very-dark-blue": "hsl(233, 47%, 7%)",
+              "dark-desaturated-blue": "hsl(244, 38%, 16%)",
+              "soft-violet": "hsl(277, 64%, 61%)",
+
+              white: "hsl(0, 0%, 100%)",
+              "slightly-transparent-white": "hsla(0, 0%, 100%, 0.75)",
+              "slightly-ransparent-white": "hsla(0, 0%, 100%, 0.6)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-very-dark-blue">
+    <main
+      class="h-screen flex flex-col md:flex-row-reverse items-center justify-center"
+    >
+      <section
+        class="relative w-[23rem] md:w-[23rem] lg:w-[46rem] rounded-t-xl md:rounded-tr-xl md:rounded-br-xl md:rounded-t-none overflow-hidden"
+      >
+        <img class="lg:hidden md:h-[19rem] gray-scale" src="images/image-header-mobile.jpg" alt="" />
+        <img
+          class="hidden md:hidden lg:block lg:w-[46rem] lg:h-[37rem] grayscale"
+          src="images/image-header-desktop.jpg"
+          alt=""
+        />
+        <div
+          class="absolute inset-0 bg-soft-violet opacity-60"
+        ></div>
+      </section>
+
+      <section
+        class="w-[23rem] h-[33rem] md:h-[19rem] lg:w-[46rem] lg:h-[37rem] bg-dark-desaturated-blue rounded-b-xl md:rounded-b-none md:rounded-l-xl space-y-10 md:space-y-0 md:flex md:flex-col md:justify-evenly"
+      >
+        <div
+          class="space-y-2 text-center md:text-left mx-14 md:mx-7 md:space-y-4 lg:space-y-7 my-10 md:my-0 lg:mx-[7.9rem]"
+        >
+          <h1 class="font-bold text-white text-3xl lg:text-5xl">
+            Get <span class="text-soft-violet">insights</span> that help your
+            business grow.
+          </h1>
+          <p class="text-slightly-transparent-white lg:text-xl">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col items-center gap-4 md:gap-0 md:flex-row md:justify-between md:mx-7 lg:mx-[7.9rem]"
+        >
+          <div class="flex flex-col items-center lg:items-start">
+            <h1 class="text-white font-bold text-2xl lg:text-3xl">10k+</h1>
+            <span
+              class="uppercase text-sm text-slightly-ransparent-white lg:text-base"
+              >companies</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center lg:items-start">
+            <h1 class="text-white font-bold text-2xl lg:text-3xl">314</h1>
+            <span
+              class="uppercase text-sm text-slightly-ransparent-white lg:text-base"
+              >templates</span
+            >
+          </div>
+
+          <div class="flex flex-col items-center lg:items-start">
+            <h1 class="uppercase text-white font-bold text-2xl lg:text-3xl">
+              12m+
+            </h1>
+            <span
+              class="uppercase text-slightly-ransparent-white text-sm lg:text-base"
+              >queries</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="attribution text-sm text-center text-white lg:text-2xl">
+            Challenge by
+            <a
+              class="text-yellow-300"
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a class="text-lime-400" href="github.com/leaonarchiez">leaonarchiez</a>.
+          </div>
+    </footer>
+
+  </body>
+</html>
